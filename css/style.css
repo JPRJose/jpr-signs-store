@@ -124,6 +124,16 @@ body {
 
 .hero-content {
     max-width: 750px;
+
+    padding: 35px;
+
+    background: rgba(4, 18, 48, 0.45);
+
+    border-left: 4px solid #d4af37;
+
+    border-radius: 12px;
+
+    backdrop-filter: blur(3px);
 }
 
 .hero-small {
