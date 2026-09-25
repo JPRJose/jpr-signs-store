@@ -2,6 +2,11 @@
    J P R SIGNS - PREMIUM WEBSITE
    ============================== */
 
+
+/* ==============================
+   GLOBAL
+   ============================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,12 +43,20 @@ body {
     padding: 18px 7%;
 
     background: #071a3d;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+/* LOGO */
 
 .logo {
     width: 150px;
     height: 50px;
+
+    flex-shrink: 0;
+
     display: flex;
     align-items: center;
 }
@@ -51,24 +64,30 @@ body {
 .logo img {
     max-width: 150px;
     max-height: 50px;
+
     width: auto;
     height: auto;
+
     display: block;
+
     object-fit: contain;
 }
-.logo span {
-    color: #d4af37;
-}
+
+
+/* NAVIGATION LINKS */
 
 .navbar nav {
     display: flex;
     align-items: center;
+
     gap: 25px;
 }
 
 .navbar nav a {
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 14px;
     font-weight: 600;
 
@@ -79,11 +98,16 @@ body {
     color: #d4af37;
 }
 
+
+/* ORDER BUTTON */
+
 .order-btn {
     background: #d4af37;
+
     color: #071a3d !important;
 
     padding: 10px 18px;
+
     border-radius: 25px;
 
     font-weight: 700 !important;
@@ -116,11 +140,16 @@ body {
         url("../images/hero-banner.jpg");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     color: #ffffff;
 }
+
+
+/* HERO CONTENT */
 
 .hero-content {
     max-width: 750px;
@@ -136,35 +165,59 @@ body {
     backdrop-filter: blur(3px);
 }
 
+
+/* SMALL HERO TITLE */
+
 .hero-small {
     color: #d4af37;
+
     font-size: 14px;
+
     font-weight: 700;
+
     letter-spacing: 3px;
+
     margin-bottom: 15px;
 }
 
+
+/* HERO MAIN TITLE */
+
 .hero h1 {
     font-size: clamp(42px, 6vw, 76px);
+
     line-height: 1.1;
+
     margin-bottom: 25px;
 }
 
 .hero h1 span {
     display: block;
+
     color: #d4af37;
 }
 
+
+/* HERO DESCRIPTION */
+
 .hero p:not(.hero-small) {
     max-width: 650px;
+
     font-size: 18px;
+
     color: #e4e8f0;
+
     margin-bottom: 35px;
 }
 
+
+/* HERO BUTTONS */
+
 .hero-buttons {
     display: flex;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
@@ -183,23 +236,33 @@ body {
     transition: 0.3s;
 }
 
+
+/* PRIMARY BUTTON */
+
 .primary-btn {
     background: #d4af37;
+
     color: #071a3d;
 }
 
 .primary-btn:hover {
     transform: translateY(-3px);
+
     background: #ffffff;
 }
 
+
+/* SECONDARY BUTTON */
+
 .secondary-btn {
     border: 2px solid #ffffff;
+
     color: #ffffff;
 }
 
 .secondary-btn:hover {
     background: #ffffff;
+
     color: #071a3d;
 }
 
@@ -212,22 +275,31 @@ body {
     padding: 90px 7%;
 }
 
+
+/* SECTION TITLE */
+
 .section-title {
     text-align: center;
+
     margin-bottom: 50px;
 }
 
 .section-title p,
 .section-label {
     color: #b08b20;
+
     font-size: 13px;
+
     font-weight: 800;
+
     letter-spacing: 3px;
+
     margin-bottom: 8px;
 }
 
 .section-title h2 {
     font-size: 40px;
+
     color: #071a3d;
 }
 
@@ -245,8 +317,12 @@ body {
     gap: 25px;
 
     max-width: 1200px;
+
     margin: auto;
 }
+
+
+/* PRODUCT CARD */
 
 .product-card {
     background: #ffffff;
@@ -266,6 +342,9 @@ body {
 
     overflow: hidden;
 }
+
+
+/* GOLD TOP LINE */
 
 .product-card::before {
     content: "";
@@ -287,6 +366,9 @@ body {
     transition: 0.3s;
 }
 
+
+/* PRODUCT HOVER */
+
 .product-card:hover {
     transform: translateY(-8px);
 
@@ -298,18 +380,15 @@ body {
     transform: scaleX(1);
 }
 
-.product-card:hover {
-    transform: translateY(-8px);
 
-    box-shadow:
-        0 18px 40px rgba(7, 26, 61, 0.15);
-}
+/* OLD PRODUCT ICON */
 
 .product-icon {
     width: 65px;
     height: 65px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -322,19 +401,68 @@ body {
     margin-bottom: 20px;
 }
 
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    width: 100%;
+
+    height: 220px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: #f7f9fc;
+}
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
+/* PRODUCT TITLE */
+
 .product-card h3 {
     color: #071a3d;
+
     font-size: 21px;
+
     margin-bottom: 10px;
 }
 
+
+/* PRODUCT DESCRIPTION */
+
 .product-card p {
     color: #687386;
+
     margin-bottom: 18px;
 }
 
+
+/* PRODUCT PRICE */
+
 .product-card strong {
     color: #b08b20;
+
     font-size: 18px;
 }
 
@@ -355,6 +483,9 @@ body {
     color: #d4af37;
 }
 
+
+/* SERVICES GRID */
+
 .services-grid {
     display: grid;
 
@@ -364,8 +495,12 @@ body {
     gap: 20px;
 
     max-width: 1200px;
+
     margin: auto;
 }
+
+
+/* SERVICE CARD */
 
 .service-card {
     padding: 30px;
@@ -374,7 +509,8 @@ body {
 
     background: #10264f;
 
-    border: 1px solid rgba(212, 175, 55, 0.25);
+    border: 1px solid
+        rgba(212, 175, 55, 0.25);
 
     transition: 0.3s;
 }
@@ -387,6 +523,7 @@ body {
 
 .service-card h3 {
     color: #d4af37;
+
     margin-bottom: 10px;
 }
 
@@ -401,19 +538,33 @@ body {
 
 .about-content {
     max-width: 900px;
+
     margin: auto;
 }
 
 .about-content h2 {
     font-size: 42px;
+
     color: #071a3d;
+
     margin-bottom: 20px;
 }
 
 .about-content p {
     color: #687386;
+
     font-size: 17px;
+
     margin-bottom: 15px;
+}
+
+
+/* ==============================
+   GALLERY
+   ============================== */
+
+#gallery {
+    background: #f7f9fc;
 }
 
 
@@ -432,28 +583,39 @@ body {
         );
 
     text-align: center;
+
     color: #ffffff;
 }
 
+
+/* ORDER CONTENT */
+
 .order-content {
     max-width: 750px;
+
     margin: auto;
 }
 
 .order-content h2 {
     font-size: 44px;
+
     margin-bottom: 18px;
 }
 
 .order-content p {
     color: #dce3ef;
+
     margin-bottom: 30px;
 }
+
+
+/* WHATSAPP BUTTON */
 
 .whatsapp-btn {
     display: inline-block;
 
     background: #ffffff;
+
     color: #071a3d;
 
     padding: 15px 28px;
@@ -469,6 +631,7 @@ body {
 
 .whatsapp-btn:hover {
     background: #d4af37;
+
     transform: translateY(-3px);
 }
 
@@ -483,7 +646,9 @@ body {
 
 .contact-section > p {
     margin: 8px;
+
     color: #687386;
+
     font-size: 17px;
 }
 
@@ -504,12 +669,15 @@ footer {
 
 footer h3 {
     color: #d4af37;
+
     font-size: 24px;
+
     margin-bottom: 8px;
 }
 
 footer p {
     color: #aeb9cb;
+
     margin: 5px;
 }
 
@@ -518,16 +686,22 @@ footer p {
    RESPONSIVE DESIGN
    ============================== */
 
+
+/* TABLET */
+
 @media (max-width: 900px) {
 
     .navbar {
         flex-direction: column;
+
         gap: 15px;
     }
 
     .navbar nav {
         flex-wrap: wrap;
+
         justify-content: center;
+
         gap: 15px;
     }
 
@@ -544,8 +718,11 @@ footer p {
     .hero {
         min-height: 75vh;
     }
+
 }
 
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
@@ -559,6 +736,10 @@ footer p {
 
     .hero {
         padding: 70px 5%;
+    }
+
+    .hero-content {
+        padding: 25px;
     }
 
     .hero h1 {
@@ -578,7 +759,12 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .product-image {
+        height: 240px;
+    }
+
     .order-content h2 {
         font-size: 34px;
     }
+
 }
