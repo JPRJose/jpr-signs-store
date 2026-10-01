@@ -778,3 +778,32 @@ footer p {
     }
 
 }
+/* BUY BUTTON */
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card strong {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.buy-btn {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 25px;
+    background: #071a3d;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #d4af37;
+    color: #071a3d;
+}
