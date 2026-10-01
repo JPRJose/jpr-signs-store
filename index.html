@@ -6,332 +6,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Place your order | JPR Signs, Chennai</title>
+    <title>JPR Signs | Sign Boards, Mug &amp; T-Shirt Printing in Chennai</title>
 
-    <meta name="description" content="Order custom printing and sign boards from JPR Signs, Chennai.">
+    <meta name="description"
+        content="JPR Signs, Chennai - sign boards, acrylic and LED letters, custom mugs, T-shirts, caps and keychains. Order on WhatsApp.">
 
     <link rel="icon" href="images/jpr-logo.png">
+
+    <!-- Link preview when shared on WhatsApp -->
+    <meta property="og:title" content="JPR Signs | Printing &amp; Sign Board Solutions, Chennai">
+    <meta property="og:description"
+        content="Sign boards, LED letters, custom mugs, T-shirts, caps and keychains.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jprjose.github.io/jpr-signs-store/images/jpr-logo.png">
+
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .order-page {
-            max-width: 1000px;
-            margin: auto;
-            padding: 60px 7% 90px;
-            display: grid;
-            grid-template-columns: 1.4fr 1fr;
-            gap: 30px;
-            align-items: start;
-        }
-
-        .order-page h1 {
-            grid-column: 1 / -1;
-            font-size: 36px;
-            color: #071a3d;
-        }
-
-        .order-form,
-        .order-side {
-            background: #ffffff;
-            border: 1px solid #e8ebf1;
-            border-radius: 18px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(7, 26, 61, 0.08);
-        }
-
-        .order-form label {
-            display: block;
-            font-weight: 700;
-            font-size: 14px;
-            color: #071a3d;
-            margin: 18px 0 6px;
-        }
-
-        .order-form label:first-of-type {
-            margin-top: 0;
-        }
-
-        .order-form input,
-        .order-form select,
-        .order-form textarea {
-            width: 100%;
-            padding: 12px 14px;
-            font: inherit;
-            color: #172033;
-            background: #f7f9fc;
-            border: 1px solid #cfd6e2;
-            border-radius: 10px;
-        }
-
-        .order-form textarea {
-            min-height: 90px;
-            resize: vertical;
-        }
-
-        .order-form input:focus-visible,
-        .order-form select:focus-visible,
-        .order-form textarea:focus-visible,
-        .submit-btn:focus-visible {
-            outline: 3px solid #d4af37;
-            outline-offset: 2px;
-        }
-
-        .row-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .field-error {
-            color: #b3261e;
-            font-size: 13px;
-            margin-top: 5px;
-            min-height: 18px;
-        }
-
-        .hint {
-            color: #687386;
-            font-size: 13px;
-            margin-top: 5px;
-        }
-
-        .submit-btn {
-            width: 100%;
-            margin-top: 26px;
-            padding: 15px;
-            border: 0;
-            border-radius: 30px;
-            background: #25d366;
-            color: #062b14;
-            font: inherit;
-            font-weight: 800;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .submit-btn:hover {
-            background: #1fb855;
-        }
-
-        .order-side h2 {
-            font-size: 20px;
-            color: #071a3d;
-            margin-bottom: 15px;
-        }
-
-        .order-side ol {
-            padding-left: 20px;
-            color: #687386;
-        }
-
-        .order-side li {
-            margin-bottom: 12px;
-        }
-
-        .order-side li strong {
-            color: #071a3d;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #071a3d;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            color: #b08b20;
-        }
-
-        @media (max-width: 800px) {
-            .order-page {
-                grid-template-columns: 1fr;
-                padding: 40px 5% 70px;
-            }
-
-            .row-2 {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 
 </head>
 
 
 <body>
 
+
+    <!-- ==============================
+         NAVIGATION
+    ============================== -->
+
     <header class="navbar">
 
-        <a href="index.html" class="logo">
+        <a href="#home" class="logo">
             <img src="images/jpr-logo.png" alt="JPR Signs">
         </a>
 
         <nav>
-            <a href="index.html#products">Products</a>
-            <a href="index.html#gallery">Gallery</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#order" class="order-btn">Order Now</a>
         </nav>
 
     </header>
 
 
-    <main class="order-page">
+    <!-- ==============================
+         HERO SECTION
+    ============================== -->
 
-        <h1>Place your order</h1>
+    <section id="home" class="hero">
 
-        <form class="order-form" id="orderForm" novalidate>
+        <div class="hero-content">
 
-            <label for="product">Product</label>
-            <select id="product" required>
-                <option>Customized Mugs</option>
-                <option>Custom T-Shirts</option>
-                <option>Custom Caps</option>
-                <option>Keychains</option>
-                <option>Sign Boards</option>
-                <option>Name Plates</option>
-            </select>
-            <p class="hint" id="priceHint"></p>
+            <p class="hero-small">WELCOME TO JPR SIGNS</p>
 
-            <label for="qty">Quantity</label>
-            <input id="qty" type="number" min="1" value="1" required>
-            <p class="field-error" id="qtyErr"></p>
+            <h1>
+                Printing &amp; Sign Board
+                <span>Solutions</span>
+            </h1>
 
-            <label for="details">Design details</label>
-            <textarea id="details"
-                placeholder="Text, colours, size, or the place where the board will be fixed"></textarea>
-            <p class="hint">You can send your logo or design file on WhatsApp after you place the order.</p>
+            <p>
+                Quality printing, customized products and professional
+                sign board solutions for your business.
+            </p>
 
-            <label for="name">Full name</label>
-            <input id="name" type="text" autocomplete="name" required>
-            <p class="field-error" id="nameErr"></p>
-
-            <label for="phone">Mobile number</label>
-            <input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10"
-                placeholder="10-digit number" required>
-            <p class="field-error" id="phoneErr"></p>
-
-            <label for="address">Delivery address</label>
-            <textarea id="address" autocomplete="street-address"
-                placeholder="House / building, street, area" required></textarea>
-            <p class="field-error" id="addressErr"></p>
-
-            <div class="row-2">
-                <div>
-                    <label for="city">City</label>
-                    <input id="city" type="text" autocomplete="address-level2" value="Chennai" required>
-                    <p class="field-error" id="cityErr"></p>
-                </div>
-                <div>
-                    <label for="pin">Pincode</label>
-                    <input id="pin" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6"
-                        required>
-                    <p class="field-error" id="pinErr"></p>
-                </div>
+            <div class="hero-buttons">
+                <a href="#order" class="primary-btn">Get a Free Quote</a>
+                <a href="#products" class="secondary-btn">View Products</a>
             </div>
 
-            <button type="submit" class="submit-btn">Send order on WhatsApp</button>
+        </div>
 
-        </form>
+    </section>
 
 
-        <aside class="order-side">
+    <!-- ==============================
+         PRODUCTS SECTION
+    ============================== -->
 
-            <h2>What happens next</h2>
+    <section id="products" class="section">
 
-            <ol>
-                <li><strong>You send this order.</strong> WhatsApp opens with your details already typed.</li>
-                <li><strong>We confirm the design and total price</strong> with you on WhatsApp.</li>
-                <li><strong>You pay</strong> using the payment details we send you after the price is confirmed.</li>
-                <li><strong>We print and deliver</strong> to your address.</li>
-            </ol>
+        <div class="section-title">
+            <p>WHAT WE OFFER</p>
+            <h2>Our Products</h2>
+        </div>
 
-            <a href="index.html#products" class="back-link">← Back to products</a>
+        <div class="products-grid">
 
-        </aside>
+            <!-- MUG -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/mug1.png" alt="Customized Mugs" loading="lazy">
+                </div>
+                <h3>Customized Mugs</h3>
+                <p>Personalized mugs for gifts, events and businesses.</p>
+                <strong>From ₹150</strong>
+                <a href="order.html?product=Customized%20Mugs" class="buy-btn">Order this</a>
+            </div>
 
-    </main>
+            <!-- T-SHIRT -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/tshirt1.png" alt="Custom Printed T-Shirts" loading="lazy">
+                </div>
+                <h3>Custom T-Shirts</h3>
+                <p>Custom printed T-shirts with your own design.</p>
+                <strong>From ₹299</strong>
+                <a href="order.html?product=Custom%20T-Shirts" class="buy-btn">Order this</a>
+            </div>
 
+            <!-- CAP -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/cap1.png" alt="Custom Printed Caps" loading="lazy">
+                </div>
+                <h3>Custom Caps</h3>
+                <p>Personalized caps for teams, events and brands.</p>
+                <strong>From ₹199</strong>
+                <a href="order.html?product=Custom%20Caps" class="buy-btn">Order this</a>
+            </div>
+
+            <!-- KEYCHAIN -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/keychain1.png" alt="Custom Keychains" loading="lazy">
+                </div>
+                <h3>Keychains</h3>
+                <p>Customized keychains for gifts and promotions.</p>
+                <strong>From ₹99</strong>
+                <a href="order.html?product=Keychains" class="buy-btn">Order this</a>
+            </div>
+
+            <!-- SIGN BOARD -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/sign4.jpeg" alt="Storefront sign board" loading="lazy">
+                </div>
+                <h3>Sign Boards</h3>
+                <p>Professional sign boards for shops and businesses.</p>
+                <strong>Get Quote</strong>
+                <a href="order.html?product=Sign%20Boards" class="buy-btn">Request a quote</a>
+            </div>
+
+            <!-- NAME PLATE -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/products/sign13.jpeg" alt="Office name plate" loading="lazy">
+                </div>
+                <h3>Name Plates</h3>
+                <p>Custom name plates for homes, offices and businesses.</p>
+                <strong>Get Quote</strong>
+                <a href="order.html?product=Name%20Plates" class="buy-btn">Request a quote</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         SERVICES
+    ============================== -->
+
+    <section id="services" class="section dark-section">
+
+        <div class="section-title">
+            <p>OUR EXPERTISE</p>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Sign Boards</h3>
+                <p>Professional signage solutions for your business.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Acrylic Letters</h3>
+                <p>Premium acrylic lettering for modern branding.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>LED Trim Cap Letters</h3>
+                <p>Bright, attractive LED signage for shops and offices.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Vinyl Stickers</h3>
+                <p>Durable vinyl stickers for shops, vehicles and more.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         GALLERY (real job photos)
+    ============================== -->
+
+    <section id="gallery" class="section">
+
+        <div class="section-title">
+            <p>OUR RECENT WORK</p>
+            <h2>Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="images/products/sign4.jpeg" alt="Meraki storefront signage" loading="lazy">
+            <img src="images/products/sign1.jpeg" alt="JMAN Group 3D wall logo" loading="lazy">
+            <img src="images/products/sign3.jpeg" alt="The Chennai Cafe illuminated signage" loading="lazy">
+            <img src="images/products/sign14.jpeg" alt="Madras Brew LED trim cap letters" loading="lazy">
+            <img src="images/products/sign12.jpeg" alt="Chai Waale LED menu board" loading="lazy">
+            <img src="images/products/sign10.jpeg" alt="Acrylic podium" loading="lazy">
+            <img src="images/products/sign11.jpeg" alt="Acrylic podium with logo" loading="lazy">
+            <img src="images/products/sign8.jpeg" alt="Kural logo wall sign" loading="lazy">
+            <img src="images/products/sign7.jpeg" alt="FinNext office logo wall sign" loading="lazy">
+            <img src="images/products/sign9.jpeg" alt="Reception logo sign" loading="lazy">
+            <img src="images/products/sign13.jpeg" alt="Office wall name plaque" loading="lazy">
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         ABOUT
+    ============================== -->
+
+    <section id="about" class="section">
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT US</p>
+
+            <h2>JPR Signs</h2>
+
+            <p>
+                We provide printing and sign board solutions with a focus
+                on quality, creativity and customer satisfaction.
+            </p>
+
+            <p>
+                From customized gifts to professional business signage,
+                we help bring your ideas to life.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         ORDER SECTION
+    ============================== -->
+
+    <section id="order" class="order-section">
+
+        <div class="order-content">
+
+            <p class="section-label">READY TO ORDER?</p>
+
+            <h2>Let's Create Something Amazing</h2>
+
+            <p>
+                Contact JPR Signs for customized printing and
+                professional sign board solutions.
+            </p>
+
+            <a href="https://wa.me/918122533055?text=Hi%20JPR%20Signs%2C%20I%20need%20a%20quote%20for%20"
+                class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                Order on WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         CONTACT
+    ============================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact JPR Signs</h2>
+        </div>
+
+        <p>📍 Chennai, Tamil Nadu</p>
+
+        <p>📞 <a href="tel:+918122533055">+91 81225 33055</a></p>
+
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
 
     <footer>
+
         <h3>JPR SIGNS</h3>
+
         <p>Printing &amp; Sign Board Solutions</p>
+
         <p>© 2026 JPR Signs. All Rights Reserved.</p>
+
     </footer>
 
-
-    <script>
-        // WhatsApp number (country code + number, no + or spaces)
-        var WHATSAPP = "918122533055";
-
-        var PRICE_HINTS = {
-            "Customized Mugs": "Starts from ₹150. Final price is confirmed after your design.",
-            "Custom T-Shirts": "Starts from ₹299. Final price is confirmed after your design.",
-            "Custom Caps": "Starts from ₹199. Final price is confirmed after your design.",
-            "Keychains": "Starts from ₹99. Final price is confirmed after your design.",
-            "Sign Boards": "Price depends on size and type. We will send you a quote.",
-            "Name Plates": "Price depends on size and material. We will send you a quote."
-        };
-
-        var $ = function (id) { return document.getElementById(id); };
-
-        function updateHint() {
-            $("priceHint").textContent = PRICE_HINTS[$("product").value] || "";
-        }
-
-        // Preselect the product from the link, e.g. order.html?product=Custom%20Caps
-        var wanted = new URLSearchParams(window.location.search).get("product");
-        if (wanted && PRICE_HINTS[wanted]) {
-            $("product").value = wanted;
-        }
-        updateHint();
-        $("product").addEventListener("change", updateHint);
-
-        function setError(id, msg) {
-            $(id).textContent = msg;
-            return msg === "";
-        }
-
-        $("orderForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            var qty = parseInt($("qty").value, 10);
-            var name = $("name").value.trim();
-            var phone = $("phone").value.trim();
-            var address = $("address").value.trim();
-            var city = $("city").value.trim();
-            var pin = $("pin").value.trim();
-
-            var ok = true;
-            ok = setError("qtyErr", qty >= 1 ? "" : "Enter a quantity of 1 or more.") && ok;
-            ok = setError("nameErr", name ? "" : "Enter your name.") && ok;
-            ok = setError("phoneErr", /^[6-9]\d{9}$/.test(phone) ? "" : "Enter a valid 10-digit mobile number.") && ok;
-            ok = setError("addressErr", address ? "" : "Enter your delivery address.") && ok;
-            ok = setError("cityErr", city ? "" : "Enter your city.") && ok;
-            ok = setError("pinErr", /^\d{6}$/.test(pin) ? "" : "Enter a 6-digit pincode.") && ok;
-
-            if (!ok) { return; }
-
-            var details = $("details").value.trim();
-
-            var lines = [
-                "New order request - JPR Signs",
-                "",
-                "Product: " + $("product").value,
-                "Quantity: " + qty,
-                "Design details: " + (details || "Will send on WhatsApp"),
-                "",
-                "Name: " + name,
-                "Mobile: " + phone,
-                "Address: " + address,
-                "City: " + city + " - " + pin
-            ];
-
-            var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n"));
-            window.location.href = url;
-        });
-    </script>
 
 </body>
 
